@@ -22,7 +22,7 @@ const Home = () => {
           </div>
 
           <div className="absolute bottom-5 right-4 z-10 flex max-w-[88%] flex-col items-end justify-center text-right font-nav sm:bottom-8 sm:right-8 md:bottom-10 md:right-12">
-            <p className="text-2xl leading-tight text-[#242843] sm:text-4xl md:text-5xl">
+            <p className="text-2xl leading-tight text-[#242843] sm:text-4xl ">
               A little chaos. A lot of color.
             </p>
 
