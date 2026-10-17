@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
+}
+
+.masonry-grid {
+  width: auto;
+  margin-inline: 0.75rem;
+  padding-inline: 0.25rem;
+}
+
+.grid-sizer,
+.art-item {
+  width: calc((100% - 32px) / 3);
+}
+
+@media (max-width: 767px) {
+  .grid-sizer,
+  .art-item {
+    width: calc((100% - 16px) / 2);
+  }
+}
+
+@media (min-width: 640px) {
+  .masonry-grid {
+    margin-inline: 1.25rem;
+    padding-inline: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    margin-inline: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-sizer,
+  .art-item {
+    width: calc((100% - 48px) / 4);
+  }
+}
+@theme {
+  --font-nav: "Cabin Sketch", cursive;
+  --font-txt: "Metamorphous", serif;
+  --font-bubly: "Fascinate Inline", cursive;
+}
+@keyframes artworkPop {
+  from {
+    opacity: 0;
+    transform: translateY(35px) scale(0.75);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
